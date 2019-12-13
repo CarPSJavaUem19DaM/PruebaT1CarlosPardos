@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControlRocket">
+   <children>
+      <Pane prefHeight="70.0" prefWidth="200.0" styleClass="footer" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Pane prefHeight="70.0" prefWidth="200.0" styleClass="footer" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" layoutY="25.0" prefHeight="32.0" prefWidth="600.0" styleClass="labelFooter">
+               <children>
+                  <Label prefHeight="45.0" prefWidth="292.0" text="Sigue nuestros artículos en nuestro blog" />
+               </children>
+            </HBox>
+         </children></Pane>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="28.0" prefWidth="378.0" styleClass="labelUrano" text="Descubre todas las cosas que puedes hacer " />
+            <ImageView fitHeight="275.0" fitWidth="268.0" pickOnBounds="true" preserveRatio="true" styleClass="imagenBuda">
+               <image>
+                  <Image url="@assets/budda.png" />
+               </image></ImageView>
+            <JFXButton onAction="#closeApp" styleClass="btnSalir" text="Click para Salir" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
